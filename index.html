@@ -651,6 +651,36 @@
       <p>Thank you for visiting my resume website. I look forward to the opportunity to connect and discuss potential collaborations. Feel free to reach out via the contact information provided.</p>
       <div class="copyright">
         &copy; Copyright <strong><span>Hariom</span></strong>
+        <footer>
+          <p>Visitor Count: <span id="visitorCount">0</span></p>
+      
+          <script>
+              // Function to increment visitor count
+              function incrementCount() {
+                  if(localStorage.getItem('visits')) {
+                      var count = parseInt(localStorage.getItem('visits'));
+                      count++;
+                      localStorage.setItem('visits', count);
+                  } else {
+                      localStorage.setItem('visits', 1);
+                  }
+              }
+      
+              // Function to display visitor count
+              function displayCount() {
+                  if(localStorage.getItem('visits')) {
+                      document.getElementById('visitorCount').innerText = localStorage.getItem('visits');
+                  } else {
+                      document.getElementById('visitorCount').innerText = '0';
+                  }
+              }
+      
+              // Call the functions when the page loads
+              incrementCount();
+              displayCount();
+          </script>
+      </footer>
+      
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
