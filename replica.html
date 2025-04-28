@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hariom Tiwari | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+  <style>
+    @keyframes floatSlow {
+      0% { transform: translate(0, 0); }
+      25% { transform: translate(10px, -10px); }
+      50% { transform: translate(0px, 10px); }
+      75% { transform: translate(-10px, -10px); }
+      100% { transform: translate(0, 0); }
+    }
+    @keyframes floatSlower {
+      0% { transform: translate(0, 0); }
+      25% { transform: translate(-10px, 10px); }
+      50% { transform: translate(10px, 0px); }
+      75% { transform: translate(-10px, -10px); }
+      100% { transform: translate(0, 0); }
+    }
+    .animate-float-slow {
+      animation: floatSlow 6s ease-in-out infinite;
+    }
+    .animate-float-slower {
+      animation: floatSlower 8s ease-in-out infinite;
+    }
+    </style>
+  
+</head>
+<body class="bg-[#0f172a] text-white font-sans min-h-screen flex flex-col">
+<main class="flex-grow">
+<!-- Navbar (Sticky Updated) -->
+<header class="sticky top-0 z-50 flex justify-between items-center px-10 py-4 bg-gradient-to-r from-indigo-900 to-indigo-800 rounded-b-full shadow-md">
+  <h1 class="text-xl font-semibold">👨‍💻 Hariom Tiwari | <span class="font-light">Portfolio</span></h1>
+  <nav class="space-x-6">
+    <a href="#about" class="hover:text-purple-400">About</a>
+    <a href="#skills" class="hover:text-purple-400">Skills</a>
+    <a href="#work" class="hover:text-purple-400">Work</a>
+    <a href="#education" class="hover:text-purple-400">Education</a>
+    <a href="#contact" class="hover:text-purple-400">Contact</a>
+  </nav>
+</header>
+
+<section class="relative w-full h-screen flex items-center px-10">
+  <img src="/assets/img/myphoto/PROFILEpICCHOPTA.jpg" alt="Profile Background" class="absolute inset-0 w-full h-full object-cover opacity-70" />
+
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div> <!-- Dark overlay -->
+
+  <div class="relative z-10 max-w-2xl text-left text-white">
+    <h1 class="text-5xl font-bold mb-6">
+      Hi, I'm <span class="text-purple-400">Hariom Tiwari</span>
+    </h1>
+    <p class="mb-8 text-lg">
+      Building scalable backends and mastering the cloud — from NIET, Greater Noida 🚀
+    </p>
+    <a href="/assets/resume/Hariom_Tiwari_Resume.pdf" download class="inline-block bg-purple-500 hover:bg-purple-600 text-white font-semibold py-3 px-6 rounded-lg">
+      Download Resume
+    </a>
+  </div>
+</section>
+
+
+
+  <!-- Overview Section -->
+  <section id="about" class="px-10 py-20 bg-[#0f172a] text-white">
+
+    <h2 class="text-5xl font-extrabold mb-10">Overview.</h2>
+    <p class="text-gray-300 text-lg mb-4">
+      <b>Java Backend Developer | Cloud Computing Enthusiast</b>
+      Experienced in Java, Spring Boot, RESTful APIs, and database management (MongoDB,
+      MySQL). Proficient in AWS & Azure, with expertise in virtual machines, cloud storage, EC2,
+      and scalable deployments. Strong foundation in cloud computing, virtualization, and
+      backend optimization. Beyond tech, I am an economics enthusiast, debater, and Model
+      United Nations awardee, passionate about teamwork and problem-solving.
+    </p>
+
+ <!-- Skills Section -->
+<section id="skills" class="bg-[#0f172a] text-white px-10 py-20">
+  <div class="text-center mb-12">
+    <p class="text-sm uppercase tracking-wide text-gray-400">Skills</p>
+    <h2 class="text-5xl font-extrabold mb-4">Technologies I Work With</h2>
+  </div>
+
+  <!-- Grid layout for skills -->
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-14 gap-y-12 justify-items-center">
+    <div class="w-28 h-28 animate-float-slow">
+      <img src="/assets/img/lang and tech icons/javaImage.jpeg" alt="Java" class="w-full h-full object-contain hover:scale-110 transition-transform duration-300" />
+    </div>
+    <div class="w-28 h-28 animate-float-slower">
+      <img src="/assets/img/lang and tech icons/aws.png" alt="AWS" class="w-full h-full object-contain hover:scale-110 transition-transform duration-300" />
+    </div>
+    <div class="w-28 h-28 animate-float-slow">
+      <img src="/assets/img/lang and tech icons/springboot.jpg" alt="Spring Boot" class="w-full h-full object-contain hover:scale-110 transition-transform duration-300" />
+    </div>
+    <div class="w-28 h-28 animate-float-slower">
+      <img src="/assets/img/lang and tech icons/python.jpg" alt="Python" class="w-full h-full object-contain hover:scale-110 transition-transform duration-300" />
+    </div>
+    <div class="w-28 h-28 animate-float-slow">
+      <img src="/assets/img/lang and tech icons/html.jpg" alt="HTML" class="w-full h-full object-contain hover:scale-110 transition-transform duration-300" />
+    </div>
+    <div class="w-28 h-28 animate-float-slow">
+      <img src="/assets/img/lang and tech icons/sql.jpg" alt="SQL" class="w-full h-full object-contain hover:scale-110 transition-transform duration-300" />
+    </div>
+    <div class="w-28 h-28 animate-float-slow">
+      <img src="/assets/img/lang and tech icons/mongo.png" alt="MongoDB" class="w-full h-full object-contain hover:scale-110 transition-transform duration-300" />
+    </div>
+    <div class="w-28 h-28 animate-float-slower">
+      <img src="/assets/img/lang and tech icons/intellije.jpg" alt="IntelliJ" class="w-full h-full object-contain hover:scale-110 transition-transform duration-300" />
+    </div>
+    <div class="w-28 h-28 animate-float-slow">
+      <img src="/assets/img/lang and tech icons/vsCode.jpg" alt="VS Code" class="w-full h-full object-contain hover:scale-110 transition-transform duration-300" />
+    </div>
+    <div class="w-28 h-28 animate-float-slow">
+      <img src="/assets/img/lang and tech icons/ml.jpg" alt="Machine Learning" class="w-full h-full object-contain hover:scale-110 transition-transform duration-300" />
+    </div>
+  </div>
+</section>
+
+
+ <!-- Projects Section -->
+<section id="work" class="bg-[#0f172a] text-white px-10 py-20">
+  <div class="text-center mb-16">
+    <p class="text-sm uppercase tracking-wide text-gray-400">My Work</p>
+    <h2 class="text-5xl font-extrabold mb-4">Projects.</h2>
+    <p class="text-gray-400 max-w-3xl mx-auto">
+      Following projects showcase my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos.
+    </p>
+  </div>
+
+  <!-- Unified Grid for All Projects -->
+  <div class="grid md:grid-cols-3 gap-10 place-items-center">
+    <!-- Project Card 1 -->
+    <div class="bg-[#1e1b4b] p-6 rounded-2xl shadow-md w-full max-w-sm">
+      <a href="https://github.com/Hariomtiwari2/Kisan-Seva" target="_blank" rel="noopener noreferrer" class="block relative">
+        <img src="/assets/img/project sc/kissan seva/kisan seva new.png" alt="Kisan Seva" class="h-40 w-full object-cover rounded-lg mb-4 transition-transform duration-300 hover:scale-105" />
+        <button class="absolute top-2 right-2 bg-white p-1 rounded-full">
+          <svg class="w-5 h-5 text-black" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M12.293 2.293a1 1 0 011.414 0L18 6.586a1 1 0 010 1.414L10.414 16H7v-3.414l8.293-8.293z"></path>
+          </svg>
+        </button>
+      </a>
+      <h3 class="text-xl font-semibold">Kisan Seva</h3>
+      <p class="text-sm text-gray-400">A platform to support farmers with agricultural services.</p>
+    </div>
+
+    <!-- Project Card 2 -->
+    <div class="bg-[#1e1b4b] p-6 rounded-2xl shadow-md w-full max-w-sm">
+      <a href="https://github.com/Hariomtiwari2/Journal-Application" target="_blank" rel="noopener noreferrer" class="block relative">
+        <img src="/assets/img/project sc/jornal.jpg" alt="Journal App" class="h-40 w-full object-cover rounded-lg mb-4 transition-transform duration-300 hover:scale-105" />
+        <button class="absolute top-2 right-2 bg-white p-1 rounded-full">
+          <svg class="w-5 h-5 text-black" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M12.293 2.293a1 1 0 011.414 0L18 6.586a1 1 0 010 1.414L10.414 16H7v-3.414l8.293-8.293z"></path>
+          </svg>
+        </button>
+      </a>
+      <h3 class="text-xl font-semibold">Cloud Based Journal</h3>
+      <p class="text-sm text-gray-400">A secure cloud journal app built with Spring Boot.</p>
+    </div>
+
+    <!-- Project Card 3 -->
+    <div class="bg-[#1e1b4b] p-6 rounded-2xl shadow-md w-full max-w-sm">
+      <a href="https://github.com/Hariomtiwari2/Hariomtiwari2--SONAR-Rock-vs-Mine-Prediction" target="_blank" rel="noopener noreferrer" class="block relative">
+        <img src="/assets/img/project sc/sonarVSRock.jpg" alt="Sonar vs Rock ML" class="h-40 w-full object-cover rounded-lg mb-4 transition-transform duration-300 hover:scale-105" />
+        <button class="absolute top-2 right-2 bg-white p-1 rounded-full">
+          <svg class="w-5 h-5 text-black" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M12.293 2.293a1 1 0 011.414 0L18 6.586a1 1 0 010 1.414L10.414 16H7v-3.414l8.293-8.293z"></path>
+          </svg>
+        </button>
+      </a>
+      <h3 class="text-xl font-semibold">Sonar vs Rock ML Project</h3>
+      <p class="text-sm text-gray-400">A machine learning project using binary classification.</p>
+    </div>
+     <!-- Project Card 4 -->
+    <div class="bg-[#1e1b4b] p-6 rounded-2xl shadow-md w-full max-w-sm">
+      <a href="https://github.com/Hariomtiwari2/Office-Email-Genrator" target="_blank" rel="noopener noreferrer" class="block relative">
+        <img src="/assets/img/project sc/office email genrator.jpg" alt="Sonar vs Rock ML" class="h-40 w-full object-cover rounded-lg mb-4 transition-transform duration-300 hover:scale-105" />
+        <button class="absolute top-2 right-2 bg-white p-1 rounded-full">
+          <svg class="w-5 h-5 text-black" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M12.293 2.293a1 1 0 011.414 0L18 6.586a1 1 0 010 1.414L10.414 16H7v-3.414l8.293-8.293z"></path>
+          </svg>
+        </button>
+      </a>
+      <h3 class="text-xl font-semibold">Office-Email-Genrator</h3>
+      <p class="text-sm text-gray-400">A core java project which creates email for office employee.</p>
+    </div>
+
+    <!-- Project Card 5  -->
+    <div class="bg-[#1e1b4b] p-6 rounded-2xl shadow-md w-full max-w-sm">
+      <a href="https://github.com/Hariomtiwari2/ATM_MACHINE_INTERFACE" target="_blank" rel="noopener noreferrer" class="block relative">
+        <img src="/assets/img/project sc/ATM.jpg" alt="Sonar vs Rock ML" class="h-40 w-full object-cover rounded-lg mb-4 transition-transform duration-300 hover:scale-105" />
+        <button class="absolute top-2 right-2 bg-white p-1 rounded-full">
+          <svg class="w-5 h-5 text-black" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M12.293 2.293a1 1 0 011.414 0L18 6.586a1 1 0 010 1.414L10.414 16H7v-3.414l8.293-8.293z"></path>
+          </svg>
+        </button>
+      </a>
+      <h3 class="text-xl font-semibold">ATM_MACHINE_INTERFACE</h3>
+      <p class="text-sm text-gray-400">This project simulates an ATM (Automated Teller Machine) system using Core Java. It allows users to perform basic banking operations like checking balance, depositing money, withdrawing funds, and changing PIN.</p>
+    </div>
+
+    <!-- Project Card 5  -->
+    <div class="bg-[#1e1b4b] p-6 rounded-2xl shadow-md w-full max-w-sm">
+      <a href="https://github.com/Hariomtiwari2/Cloud-Azure-Project" target="_blank" rel="noopener noreferrer" class="block relative">
+        <img src="/assets/img/project sc/cloud_azure.jpg" alt="Sonar vs Rock ML" class="h-40 w-full object-cover rounded-lg mb-4 transition-transform duration-300 hover:scale-105" />
+        <button class="absolute top-2 right-2 bg-white p-1 rounded-full">
+          <svg class="w-5 h-5 text-black" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M12.293 2.293a1 1 0 011.414 0L18 6.586a1 1 0 010 1.414L10.414 16H7v-3.414l8.293-8.293z"></path>
+          </svg>
+        </button>
+      </a>
+      <h3 class="text-xl font-semibold">loud-Azure-Project</h3>
+      <p class="text-sm text-gray-400">A Spring Boot-based web app for collecting and storing form data in Azure SQL Database. Features include a user-friendly form, secure Azure SQL integration, and Spring Boot backend for efficient data management. Highlights scalable, secure, and cloud-based solutions.</p>
+    </div>
+  </div>
+</section>
+<section class="bg-[#0f172a] text-white px-10 py-20">
+  <div class="text-center mb-10">
+    <p class="uppercase text-gray-400">My Achievements</p>
+    <h2 class="text-5xl font-extrabold">Certifications.</h2>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+
+
+    <!-- Certificate Card -->
+    <div class="bg-[#1e1b4b] rounded-2xl p-6 shadow-lg flex flex-col items-center">
+      <!-- Image Part -->
+      <a href="https://trainings.internshala.com/verify-certificate/?certificate_number=6flfsshij4d" target="_blank" class="w-full">
+        <img src="/assets/img/Certificates/core java.png" alt="Certificate" class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300 object-cover h-60 md:h-80 w-full"/>
+      </a>
+      <!-- Text Part (Minimal, only title) -->
+      <div class="mt-4 text-center">
+        <h3 class="text-2xl font-semibold mb-2">Core Java</h3>
+      </div>
+    </div>
+
+    <!-- Another Certificate Card -->
+    <div class="bg-[#1e1b4b] rounded-2xl p-6 shadow-lg flex flex-col items-center">
+      <a href="https://trainings.internshala.com/verify-certificate/?certificate_number=28j4vz08wpl" target="_blank" class="w-full">
+        <img src="/assets/img/Certificates/ml.png" alt="Certificate" class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300 object-cover h-60 md:h-80 w-full"/>
+      </a>
+      <div class="mt-4 text-center">
+        <h3 class="text-2xl font-semibold mb-2">Machine Learning</h3>
+      </div>
+    </div>
+
+    <!-- Another Certificate Card -->
+    <div class="bg-[#1e1b4b] rounded-2xl p-6 shadow-lg flex flex-col items-center">
+      <a href="https://trainings.internshala.com/verify-certificate/?certificate_number=6snnnl547vq" target="_blank" class="w-full">
+        <img src="/assets/img/Certificates/webd.png" alt="Certificate" class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300 object-cover h-60 md:h-80 w-full"/>
+      </a>
+      <div class="mt-4 text-center">
+        <h3 class="text-2xl font-semibold mb-2">Web Development</h3>
+      </div>
+    </div>
+
+     <!-- Another Certificate Card -->
+     <div class="bg-[#1e1b4b] rounded-2xl p-6 shadow-lg flex flex-col items-center">
+      <a href="https://www.coursera.org/account/accomplishments/verify/5B2PKYTTP84V" target="_blank" class="w-full">
+        <img src="/assets/img/Certificates/oops in java.png" alt="Certificate" class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300 object-cover h-60 md:h-80 w-full"/>
+      </a>
+      <div class="mt-4 text-center">
+        <h3 class="text-2xl font-semibold mb-2"> Object Oriented Programming in Java</h3>
+      </div>
+    </div>
+     
+  </div>
+</section>
+
+
+
+<!-- 🔥 Education Section (Updated for Better Sizing and Centered) -->
+<section id="education" class="px-10 py-24 bg-[#0f172a] text-white">
+  <div class="text-center mb-12">
+    <p class="text-base uppercase tracking-wide text-gray-400">My Journey</p>
+    <h2 class="text-5xl font-extrabold">Education.</h2>
+  </div>
+
+  <div class="max-w-5xl mx-auto relative border-l-2 border-gray-700 pl-10 space-y-12">
+    <!-- Entry -->
+    <div class="flex items-center">
+      <div class="w-20 h-20 flex-shrink-0 mr-6">
+        <img src="/assets/img/school and collage/niet logo.png" alt="Institute Logo" class="w-full h-full object-cover rounded-full border border-gray-600" />
+      </div>
+      <div class="relative">
+        <div class="absolute w-3 h-3 bg-white rounded-full mt-2 -left-10 border border-gray-700"></div>
+        <h3 class="text-2xl font-semibold">2022 - Present</h3>
+        <p class="text-gray-400 text-lg">Pursuing B.Tech from NIET, Gr. Noida</p>
+      </div>
+    </div>
+
+    <!-- Entry -->
+    <div class="flex items-center">
+      <div class="w-20 h-20 flex-shrink-0 mr-6">
+        <img src="/assets/img/school and collage/dav logo.png" alt="Institute Logo" class="w-full h-full object-cover rounded-full border border-gray-600" />
+      </div>
+      <div class="relative">
+        <div class="absolute w-3 h-3 bg-white rounded-full mt-2 -left-10 border border-gray-700"></div>
+        <h3 class="text-2xl font-semibold">2020 - 2022</h3>
+        <p class="text-gray-400 text-lg">Senior Secondary School from D.A.V. Noida</p>
+      </div>
+    </div>
+
+    <!-- Entry -->
+    <div class="flex items-center">
+      <div class="w-20 h-20 flex-shrink-0 mr-6">
+        <img src="/assets/img/school and collage/dav logo.png" alt="Institute Logo" class="w-full h-full object-cover rounded-full border border-gray-600" />
+      </div>
+      <div class="relative">
+        <div class="absolute w-3 h-3 bg-white rounded-full mt-2 -left-10 border border-gray-700"></div>
+        <h3 class="text-2xl font-semibold">2008 - 2020</h3>
+        <p class="text-gray-400 text-lg">Secondary School from D.A.V. Noida</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- Contact Section -->
+<section id="contact" class="bg-[#0f172a] text-white px-10 py-20">
+  <div class="text-center mb-8">
+    <p class="uppercase text-gray-400">Get in Touch</p>
+    <h2 class="text-5xl font-extrabold">Contact.</h2>
+  </div>
+  <div class="max-w-lg mx-auto bg-[#1e1b4b] p-8 rounded-2xl shadow-lg">
+    <form action="https://formspree.io/f/xdkgakgk" method="POST">
+      <div class="mb-4">
+        <label class="block text-sm text-gray-300 mb-1">Your Name</label>
+        <input 
+          type="text" 
+          name="name" 
+          placeholder="What's your good name?" 
+          class="w-full p-3 bg-[#0f172a] text-white rounded-lg border border-gray-600 focus:outline-none" 
+          required
+        />
+      </div>
+      <div class="mb-4">
+        <label class="block text-sm text-gray-300 mb-1">Your Email</label>
+        <input 
+          type="email" 
+          name="email" 
+          placeholder="What's your email address?" 
+          class="w-full p-3 bg-[#0f172a] text-white rounded-lg border border-gray-600 focus:outline-none" 
+          required
+        />
+      </div>
+      <div class="mb-6">
+        <label class="block text-sm text-gray-300 mb-1">Your Message</label>
+        <textarea 
+          name="message" 
+          placeholder="What you want to say" 
+          rows="5" 
+          class="w-full p-3 bg-[#0f172a] text-white rounded-lg border border-gray-600 focus:outline-none"
+          required
+        ></textarea>
+      </div>
+      <button 
+        type="submit" 
+        class="w-full py-3 bg-purple-600 hover:bg-purple-700 rounded-lg font-semibold transition-all"
+      >
+        Send
+      </button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-[#0f172a] text-gray-400 text-center py-4 border-t border-gray-700">
+  <p class="text-sm leading-tight">
+    © 2025 Created by <span class="text-white font-semibold">Hariom Tiwari</span> |
+    Designed by <span class="text-white font-semibold">Aman Soni</span>
+  </p>
+</footer>
+
+
+</body>
+</html>
