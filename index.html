@@ -1,417 +1,386 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Hariom Tiwari CV website</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
- <link href="assets/img/profile3.png" rel="icon"><!--<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">-->
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hariom Tiwari | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+  <style>
+    @keyframes floatSlow {
+      0% { transform: translate(0, 0); }
+      25% { transform: translate(10px, -10px); }
+      50% { transform: translate(0px, 10px); }
+      75% { transform: translate(-10px, -10px); }
+      100% { transform: translate(0, 0); }
+    }
+    @keyframes floatSlower {
+      0% { transform: translate(0, 0); }
+      25% { transform: translate(-10px, 10px); }
+      50% { transform: translate(10px, 0px); }
+      75% { transform: translate(-10px, -10px); }
+      100% { transform: translate(0, 0); }
+    }
+    .animate-float-slow {
+      animation: floatSlow 6s ease-in-out infinite;
+    }
+    .animate-float-slower {
+      animation: floatSlower 8s ease-in-out infinite;
+    }
+    </style>
+  
 </head>
+<body class="bg-[#0f172a] text-white font-sans min-h-screen flex flex-col">
+<main class="flex-grow">
+<!-- Navbar (Sticky Updated) -->
+<header class="sticky top-0 z-50 flex justify-between items-center px-10 py-4 bg-gradient-to-r from-indigo-900 to-indigo-800 rounded-b-full shadow-md">
+  <h1 class="text-xl font-semibold">👨‍💻 Hariom Tiwari | <span class="font-light">Portfolio</span></h1>
+  <nav class="space-x-6">
+    <a href="#about" class="hover:text-purple-400">About</a>
+    <a href="#skills" class="hover:text-purple-400">Skills</a>
+    <a href="#work" class="hover:text-purple-400">Work</a>
+    <a href="#education" class="hover:text-purple-400">Education</a>
+    <a href="#contact" class="hover:text-purple-400">Contact</a>
+  </nav>
+</header>
 
-<body>
+<section class="relative w-full h-screen flex items-center px-10">
+  <img src="/assets/img/myphoto/PROFILEpICCHOPTA.jpg" alt="Profile Background" class="absolute inset-0 w-full h-full object-cover opacity-70" />
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div> <!-- Dark overlay -->
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
+  <div class="relative z-10 max-w-2xl text-left text-white">
+    <h1 class="text-5xl font-bold mb-6">
+      Hi, I'm <span class="text-purple-400">Hariom Tiwari</span>
+    </h1>
+    <p class="mb-8 text-lg">
+      Building scalable backends and mastering the cloud — from NIET, Greater Noida 🚀
+    </p>
+    <a href="/assets/resume/Hariom_Tiwari_Resume.pdf" download class="inline-block bg-purple-500 hover:bg-purple-600 text-white font-semibold py-3 px-6 rounded-lg">
+      Download Resume
+    </a>
+  </div>
+</section>
 
-      <div class="profile">
-        <img src="assets/img/profile3.png" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Hariom Tiwari</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://www.instagram.com/hariomtiwari77/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/hariomtiwari02/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://github.com/Hariomtiwari2" class="github" target="_blank"><i class="bx bxl-github"></i></a>
-      </div>
-      
-      
-      
+
+
+  <!-- Overview Section -->
+  <section id="about" class="px-10 py-20 bg-[#0f172a] text-white">
+
+    <h2 class="text-5xl font-extrabold mb-10">Overview.</h2>
+    <p class="text-gray-300 text-lg mb-4">
+      <b>Java Backend Developer | Cloud Computing Enthusiast</b>
+      Experienced in Java, Spring Boot, RESTful APIs, and database management (MongoDB,
+      MySQL). Proficient in AWS & Azure, with expertise in virtual machines, cloud storage, EC2,
+      and scalable deployments. Strong foundation in cloud computing, virtualization, and
+      backend optimization. Beyond tech, I am an economics enthusiast, debater, and Model
+      United Nations awardee, passionate about teamwork and problem-solving.
+    </p>
+
+ <!-- Skills Section -->
+<section id="skills" class="bg-[#0f172a] text-white px-10 py-20">
+  <div class="text-center mb-12">
+    <p class="text-sm uppercase tracking-wide text-gray-400">Skills</p>
+    <h2 class="text-5xl font-extrabold mb-4">Technologies I Work With</h2>
+  </div>
+
+  <!-- Grid layout for skills -->
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-14 gap-y-12 justify-items-center">
+    <div class="w-28 h-28 animate-float-slow">
+      <img src="/assets/img/lang and tech icons/javaImage.jpeg" alt="Java" class="w-full h-full object-contain hover:scale-110 transition-transform duration-300" />
     </div>
-    
-
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
+    <div class="w-28 h-28 animate-float-slower">
+      <img src="/assets/img/lang and tech icons/aws.png" alt="AWS" class="w-full h-full object-contain hover:scale-110 transition-transform duration-300" />
     </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Hariom Tiwari</h1>
-      <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Geo Political Guy"></span></p>
+    <div class="w-28 h-28 animate-float-slow">
+      <img src="/assets/img/lang and tech icons/springboot.jpg" alt="Spring Boot" class="w-full h-full object-contain hover:scale-110 transition-transform duration-300" />
     </div>
-  </section><!-- End Hero -->
+    <div class="w-28 h-28 animate-float-slower">
+      <img src="/assets/img/lang and tech icons/python.jpg" alt="Python" class="w-full h-full object-contain hover:scale-110 transition-transform duration-300" />
+    </div>
+    <div class="w-28 h-28 animate-float-slow">
+      <img src="/assets/img/lang and tech icons/html.jpg" alt="HTML" class="w-full h-full object-contain hover:scale-110 transition-transform duration-300" />
+    </div>
+    <div class="w-28 h-28 animate-float-slow">
+      <img src="/assets/img/lang and tech icons/sql.jpg" alt="SQL" class="w-full h-full object-contain hover:scale-110 transition-transform duration-300" />
+    </div>
+    <div class="w-28 h-28 animate-float-slow">
+      <img src="/assets/img/lang and tech icons/mongo.png" alt="MongoDB" class="w-full h-full object-contain hover:scale-110 transition-transform duration-300" />
+    </div>
+    <div class="w-28 h-28 animate-float-slower">
+      <img src="/assets/img/lang and tech icons/intellije.jpg" alt="IntelliJ" class="w-full h-full object-contain hover:scale-110 transition-transform duration-300" />
+    </div>
+    <div class="w-28 h-28 animate-float-slow">
+      <img src="/assets/img/lang and tech icons/vsCode.jpg" alt="VS Code" class="w-full h-full object-contain hover:scale-110 transition-transform duration-300" />
+    </div>
+    <div class="w-28 h-28 animate-float-slow">
+      <img src="/assets/img/lang and tech icons/ml.jpg" alt="Machine Learning" class="w-full h-full object-contain hover:scale-110 transition-transform duration-300" />
+    </div>
+  </div>
+</section>
 
 
-  <main id="main">
+ <!-- Projects Section -->
+<section id="work" class="bg-[#0f172a] text-white px-10 py-20">
+  <div class="text-center mb-16">
+    <p class="text-sm uppercase tracking-wide text-gray-400">My Work</p>
+    <h2 class="text-5xl font-extrabold mb-4">Projects.</h2>
+    <p class="text-gray-400 max-w-3xl mx-auto">
+      Following projects showcase my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos.
+    </p>
+  </div>
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
+  <!-- Unified Grid for All Projects -->
+  <div class="grid md:grid-cols-3 gap-10 place-items-center">
+    <!-- Project Card 1 -->
+    <div class="bg-[#1e1b4b] p-6 rounded-2xl shadow-md w-full max-w-sm">
+      <a href="https://github.com/Hariomtiwari2/Kisan-Seva" target="_blank" rel="noopener noreferrer" class="block relative">
+        <img src="/assets/img/project sc/kissan seva/kisan seva new.png" alt="Kisan Seva" class="h-40 w-full object-cover rounded-lg mb-4 transition-transform duration-300 hover:scale-105" />
+        <button class="absolute top-2 right-2 bg-white p-1 rounded-full">
+          <svg class="w-5 h-5 text-black" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M12.293 2.293a1 1 0 011.414 0L18 6.586a1 1 0 010 1.414L10.414 16H7v-3.414l8.293-8.293z"></path>
+          </svg>
+        </button>
+      </a>
+      <h3 class="text-xl font-semibold">Kisan Seva</h3>
+      <p class="text-sm text-gray-400">A platform to support farmers with agricultural services.</p>
+    </div>
 
-        <div class="section-title">
-          <h2>About</h2>
-          <p>Energetic and ambitious engineering student specializing in Information Technology, with a focus on Java Full Stack development. proficient in Web Development and adept in Python programming. Well-versed in version control using GitHub and GitBash. Possesses excellent communication skills and fervent drive for continuous learning.</p>
-        </div>
+    <!-- Project Card 2 -->
+    <div class="bg-[#1e1b4b] p-6 rounded-2xl shadow-md w-full max-w-sm">
+      <a href="https://github.com/Hariomtiwari2/Journal-Application" target="_blank" rel="noopener noreferrer" class="block relative">
+        <img src="/assets/img/project sc/jornal.jpg" alt="Journal App" class="h-40 w-full object-cover rounded-lg mb-4 transition-transform duration-300 hover:scale-105" />
+        <button class="absolute top-2 right-2 bg-white p-1 rounded-full">
+          <svg class="w-5 h-5 text-black" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M12.293 2.293a1 1 0 011.414 0L18 6.586a1 1 0 010 1.414L10.414 16H7v-3.414l8.293-8.293z"></path>
+          </svg>
+        </button>
+      </a>
+      <h3 class="text-xl font-semibold">Cloud Based Journal</h3>
+      <p class="text-sm text-gray-400">A secure cloud journal app built with Spring Boot.</p>
+    </div>
 
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/WhatsApp Image 2024-10-19 at 12.17.41_a996ea0f.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>JAVA &amp; Web Developer.</h3>
-            <!--<p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>-->
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>2 June 2004</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 8375055763</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Noida Uttar pradesh</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Persuing B.tech</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>hariomtiwari20004@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                </ul>
-              </div>
-            </div>
-           
-          </div>
-        </div>
+    <!-- Project Card 3 -->
+    <div class="bg-[#1e1b4b] p-6 rounded-2xl shadow-md w-full max-w-sm">
+      <a href="https://github.com/Hariomtiwari2/Hariomtiwari2--SONAR-Rock-vs-Mine-Prediction" target="_blank" rel="noopener noreferrer" class="block relative">
+        <img src="/assets/img/project sc/sonarVSRock.jpg" alt="Sonar vs Rock ML" class="h-40 w-full object-cover rounded-lg mb-4 transition-transform duration-300 hover:scale-105" />
+        <button class="absolute top-2 right-2 bg-white p-1 rounded-full">
+          <svg class="w-5 h-5 text-black" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M12.293 2.293a1 1 0 011.414 0L18 6.586a1 1 0 010 1.414L10.414 16H7v-3.414l8.293-8.293z"></path>
+          </svg>
+        </button>
+      </a>
+      <h3 class="text-xl font-semibold">Sonar vs Rock ML Project</h3>
+      <p class="text-sm text-gray-400">A machine learning project using binary classification.</p>
+    </div>
+     <!-- Project Card 4 -->
+    <div class="bg-[#1e1b4b] p-6 rounded-2xl shadow-md w-full max-w-sm">
+      <a href="https://github.com/Hariomtiwari2/Office-Email-Genrator" target="_blank" rel="noopener noreferrer" class="block relative">
+        <img src="/assets/img/project sc/office email genrator.jpg" alt="Sonar vs Rock ML" class="h-40 w-full object-cover rounded-lg mb-4 transition-transform duration-300 hover:scale-105" />
+        <button class="absolute top-2 right-2 bg-white p-1 rounded-full">
+          <svg class="w-5 h-5 text-black" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M12.293 2.293a1 1 0 011.414 0L18 6.586a1 1 0 010 1.414L10.414 16H7v-3.414l8.293-8.293z"></path>
+          </svg>
+        </button>
+      </a>
+      <h3 class="text-xl font-semibold">Office-Email-Genrator</h3>
+      <p class="text-sm text-gray-400">A core java project which creates email for office employee.</p>
+    </div>
 
-      </div>
-    </section><!-- End About Section -->
+    <!-- Project Card 5  -->
+    <div class="bg-[#1e1b4b] p-6 rounded-2xl shadow-md w-full max-w-sm">
+      <a href="https://github.com/Hariomtiwari2/ATM_MACHINE_INTERFACE" target="_blank" rel="noopener noreferrer" class="block relative">
+        <img src="/assets/img/project sc/ATM.jpg" alt="Sonar vs Rock ML" class="h-40 w-full object-cover rounded-lg mb-4 transition-transform duration-300 hover:scale-105" />
+        <button class="absolute top-2 right-2 bg-white p-1 rounded-full">
+          <svg class="w-5 h-5 text-black" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M12.293 2.293a1 1 0 011.414 0L18 6.586a1 1 0 010 1.414L10.414 16H7v-3.414l8.293-8.293z"></path>
+          </svg>
+        </button>
+      </a>
+      <h3 class="text-xl font-semibold">ATM_MACHINE_INTERFACE</h3>
+      <p class="text-sm text-gray-400">This project simulates an ATM (Automated Teller Machine) system using Core Java. It allows users to perform basic banking operations like checking balance, depositing money, withdrawing funds, and changing PIN.</p>
+    </div>
 
-    
+    <!-- Project Card 5  -->
+    <div class="bg-[#1e1b4b] p-6 rounded-2xl shadow-md w-full max-w-sm">
+      <a href="https://github.com/Hariomtiwari2/Cloud-Azure-Project" target="_blank" rel="noopener noreferrer" class="block relative">
+        <img src="/assets/img/project sc/cloud_azure.jpg" alt="Sonar vs Rock ML" class="h-40 w-full object-cover rounded-lg mb-4 transition-transform duration-300 hover:scale-105" />
+        <button class="absolute top-2 right-2 bg-white p-1 rounded-full">
+          <svg class="w-5 h-5 text-black" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M12.293 2.293a1 1 0 011.414 0L18 6.586a1 1 0 010 1.414L10.414 16H7v-3.414l8.293-8.293z"></path>
+          </svg>
+        </button>
+      </a>
+      <h3 class="text-xl font-semibold">loud-Azure-Project</h3>
+      <p class="text-sm text-gray-400">A Spring Boot-based web app for collecting and storing form data in Azure SQL Database. Features include a user-friendly form, secure Azure SQL integration, and Spring Boot backend for efficient data management. Highlights scalable, secure, and cloud-based solutions.</p>
+    </div>
+  </div>
+</section>
+<section class="bg-[#0f172a] text-white px-10 py-20">
+  <div class="text-center mb-10">
+    <p class="uppercase text-gray-400">My Achievements</p>
+    <h2 class="text-5xl font-extrabold">Certifications.</h2>
+  </div>
 
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
 
-        <div class="section-title">
-          <h2>Skills</h2>
-          
-        </div>
 
-        <div class="row skills-content">
 
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">HTML <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">CSS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Core Java<i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-           <!-- <div class="progress">
-              <span class="skill">PHP <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>-->
-
-            <div class="progress">
-              <span class="skill">Spring boot<i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Azure<i class="val">40%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Resume</h2>
-        </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4> B. Tech in Information Technology 2022 - 2026</h4>
-              <h5>2022 - 2026</h5>
-              <p><em>Noida Institute of Engineering Technology 19, Knowledge Park- ll, Institutional Area, Greater Noida </em></p>
-            </div>
-            <div class="resume-item">
-              <h4>Senior Secondary </h4>
-              <h5> April 2021 – March 2022</h5>
-              <p><em>Sarla Chorpa D.A.V. public school Noida Sector 56</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>High School</h4>
-              <h5> April 2019 – March 2020</h5>
-              <p><em>Sarla Chorpa D.A.V. public school Noida Sector 56</em></p>
-            </div>
-          </div>
-          
-
-      </div>
-    </section>
-    <!-- End Resume Section -->
-
-   
-    <!-- ======= Services Section ======= -->
-
-    <section id="services" class="services">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Certifications</h2>
-          <h5>Please click on imgage for verification</h5>
-        </div>  
-
-        <div class="row" style="padding: 1px 1px 1px 1px;">
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="bi bi-briefcase"></i></div>
-            <h4 class="title"><a href="">Internshala web development</a></h4>
-
-          <a href="https://trainings.internshala.com/verify-certificate/?certificate_number=6snnnl547vq" target="_blank"> <img src="/assets/img/Certificates/webd.png" alt="https://trainings.internshala.com/verify-certificate/?certificate_number=6snnnl547vq" style="max-height: 50vh  ; width: 60vh;" > </a>
-
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding: 4px 4px 4px 4px;">
-            <div class="icon"><i class="bi bi-card-checklist"></i></div>
-            <h4 class="title"><a href="">Internshala Core Java</a></h4>
-            <a href="https://trainings.internshala.com/verify-certificate/?certificate_number=6flfsshij4d" target="_blank"> <img src="/assets/img/Certificates/core java.png" alt="https://trainings.internshala.com/verify-certificate/?certificate_number=6flfsshij4d" style="max-height: 50vh  ; width: 60vh; " ></a>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200"  style="padding: 4px 4px 4px 4px;">
-            <div class="icon"><i class="bi bi-bar-chart"></i></div>
-            <h4 class="title"><a href="">Object Oriented programming in Java</a></h4>
-            <a href="https://www.coursera.org/account/accomplishments/verify/5B2PKYTTP84V" target="_blank"><img src="/assets/img/Certificates/oops in java.png" style="max-height: 50vh  ; width: 60vh;"></a>
-          </div>
-         <!-- <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300"  style="padding: 4px 4px 4px 4px;">
-            <div class="icon"><i class="bi bi-binoculars"></i></div>
-            <h4 class="title"><a href="">Java programming: Stuctured Data</a></h4>
-           <a href="https://www.coursera.org/account/accomplishments/verify/ADNKHDMPJPZC" target="_blank"><img src="/assets/img/Certificates/arrrayoops.png" alt="https://www.coursera.org/account/accomplishments/verify/ADNKHDMPJPZC" style="max-height: 50vh  ; width: 60vh;"></a>
-          </div>-->
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400"  style="padding: 4px 4px 4px 4px;">
-            <div class="icon"><i class="bi bi-brightness-high"></i></div>
-            <h4 class="title"><a href="">Python Basics </a></h4>
-            <a href="https://www.coursera.org/account/accomplishments/verify/6EGN25KPBXT3" target="_blank"><img src="/assets/img/Certificates/python basics.png"   alt="https://www.coursera.org/account/accomplishments/verify/6EGN25KPBXT3" style="max-height: 50vh  ; width: 60vh;" ></a>
-          </div>
-         
-        </div>
-
-      </div>
-    </section>
-    <!-- End Services Section -->
-    
-
-    
-    <!--========= Project section ======= -->
-    <section id="Project" class=" project" >
-      <div class="section-title">
-        <h2>Projects</h2>
-      </div>  
-        <div class="project" data-aos="fade-up">
-          <h2>Kisan Seva</h2>
-          <p> Kisan Seva, a platform dedicated to supporting Indian farmers with valuable resources and tools to improve agricultural practices and access essential services.</p>
-          <a href="https://kisanseva.shop/" target="_blank"><img src="assets/img/kissan_seva_website-new.png" class="testimonial-img" alt="https://kisanseva.shop/" style="max-height: 100%; max-width: 100%;"></a>
-          
-          
-          </div>
-      </div>  
-    </section>
-    <!--========= End project section =====-->
-
-    <!-- ======= Contact Section ======= 
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-
-        <div class="row" data-aos="fade-in">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Noida Uttar pradesh, India</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>hariomtiwari20004@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+91 8375055763</p>
-              </div>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224356.8592340161!2d77.23701245987459!3d28.522404035544067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1719940755310!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-
-          </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form  action="https://formsubmit.co/hariomtiwari20004@gmail.com" method="POST" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="sent-message"></div>
-                <input type="hidden" name="_next" value="#">
-              </div>
-              <div class="text-center">
-                <input type="hidden" name="_captcha" value="false">
-                <button type="submit">Send Message</button>
-              </div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-   End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container" style="text-align: center;">
-      <h6>HARIOM TIWARI</h6>
-      <p>Thank you for visiting my resume website. I look forward to the opportunity to connect and discuss potential collaborations. Reach out via the contact information provided.</p>
-      <div class="copyright">
-        &copy; Copyright <strong><span>Hariom</span></strong>
-        <footer>
-        <!--  <p>Visitor Count: <span id="visitorCount">0</span></p>
-      
-          <script>
-              // Function to increment visitor count
-              function incrementCount() {
-                  if(localStorage.getItem('visits')) {
-                      var count = parseInt(localStorage.getItem('visits'));
-                      count++;
-                      localStorage.setItem('visits', count);
-                  } else {
-                      localStorage.setItem('visits', 1);
-                  }
-              }
-      
-              // Function to display visitor count
-              function displayCount() {
-                  if(localStorage.getItem('visits')) {
-                      document.getElementById('visitorCount').innerText = localStorage.getItem('visits');
-                  } else {
-                      document.getElementById('visitorCount').innerText = '0';
-                  }
-              }
-      
-              // Call the functions when the page loads
-              incrementCount();
-              displayCount();
-          </script>-->
-      </footer>
-      
-      </div>
-      <div class="credits">
-       
-        Designed by <a href="#">Hariom Tiwari</a>
+    <!-- Certificate Card -->
+    <div class="bg-[#1e1b4b] rounded-2xl p-6 shadow-lg flex flex-col items-center">
+      <!-- Image Part -->
+      <a href="https://trainings.internshala.com/verify-certificate/?certificate_number=6flfsshij4d" target="_blank" class="w-full">
+        <img src="/assets/img/Certificates/core java.png" alt="Certificate" class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300 object-cover h-60 md:h-80 w-full"/>
+      </a>
+      <!-- Text Part (Minimal, only title) -->
+      <div class="mt-4 text-center">
+        <h3 class="text-2xl font-semibold mb-2">Core Java</h3>
       </div>
     </div>
-  </footer><!-- End  Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Another Certificate Card -->
+    <div class="bg-[#1e1b4b] rounded-2xl p-6 shadow-lg flex flex-col items-center">
+      <a href="https://trainings.internshala.com/verify-certificate/?certificate_number=28j4vz08wpl" target="_blank" class="w-full">
+        <img src="/assets/img/Certificates/ml.png" alt="Certificate" class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300 object-cover h-60 md:h-80 w-full"/>
+      </a>
+      <div class="mt-4 text-center">
+        <h3 class="text-2xl font-semibold mb-2">Machine Learning</h3>
+      </div>
+    </div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+    <!-- Another Certificate Card -->
+    <div class="bg-[#1e1b4b] rounded-2xl p-6 shadow-lg flex flex-col items-center">
+      <a href="https://trainings.internshala.com/verify-certificate/?certificate_number=6snnnl547vq" target="_blank" class="w-full">
+        <img src="/assets/img/Certificates/webd.png" alt="Certificate" class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300 object-cover h-60 md:h-80 w-full"/>
+      </a>
+      <div class="mt-4 text-center">
+        <h3 class="text-2xl font-semibold mb-2">Web Development</h3>
+      </div>
+    </div>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+     <!-- Another Certificate Card -->
+     <div class="bg-[#1e1b4b] rounded-2xl p-6 shadow-lg flex flex-col items-center">
+      <a href="https://www.coursera.org/account/accomplishments/verify/5B2PKYTTP84V" target="_blank" class="w-full">
+        <img src="/assets/img/Certificates/oops in java.png" alt="Certificate" class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300 object-cover h-60 md:h-80 w-full"/>
+      </a>
+      <div class="mt-4 text-center">
+        <h3 class="text-2xl font-semibold mb-2"> Object Oriented Programming in Java</h3>
+      </div>
+    </div>
+     
+  </div>
+</section>
+
+
+
+<!-- 🔥 Education Section (Updated for Better Sizing and Centered) -->
+<section id="education" class="px-10 py-24 bg-[#0f172a] text-white">
+  <div class="text-center mb-12">
+    <p class="text-base uppercase tracking-wide text-gray-400">My Journey</p>
+    <h2 class="text-5xl font-extrabold">Education.</h2>
+  </div>
+
+  <div class="max-w-5xl mx-auto relative border-l-2 border-gray-700 pl-10 space-y-12">
+    <!-- Entry -->
+    <div class="flex items-center">
+      <div class="w-20 h-20 flex-shrink-0 mr-6">
+        <img src="/assets/img/school and collage/niet logo.png" alt="Institute Logo" class="w-full h-full object-cover rounded-full border border-gray-600" />
+      </div>
+      <div class="relative">
+        <div class="absolute w-3 h-3 bg-white rounded-full mt-2 -left-10 border border-gray-700"></div>
+        <h3 class="text-2xl font-semibold">2022 - Present</h3>
+        <p class="text-gray-400 text-lg">Pursuing B.Tech from NIET, Gr. Noida</p>
+      </div>
+    </div>
+
+    <!-- Entry -->
+    <div class="flex items-center">
+      <div class="w-20 h-20 flex-shrink-0 mr-6">
+        <img src="/assets/img/school and collage/dav logo.png" alt="Institute Logo" class="w-full h-full object-cover rounded-full border border-gray-600" />
+      </div>
+      <div class="relative">
+        <div class="absolute w-3 h-3 bg-white rounded-full mt-2 -left-10 border border-gray-700"></div>
+        <h3 class="text-2xl font-semibold">2020 - 2022</h3>
+        <p class="text-gray-400 text-lg">Senior Secondary School from D.A.V. Noida</p>
+      </div>
+    </div>
+
+    <!-- Entry -->
+    <div class="flex items-center">
+      <div class="w-20 h-20 flex-shrink-0 mr-6">
+        <img src="/assets/img/school and collage/dav logo.png" alt="Institute Logo" class="w-full h-full object-cover rounded-full border border-gray-600" />
+      </div>
+      <div class="relative">
+        <div class="absolute w-3 h-3 bg-white rounded-full mt-2 -left-10 border border-gray-700"></div>
+        <h3 class="text-2xl font-semibold">2008 - 2020</h3>
+        <p class="text-gray-400 text-lg">Secondary School from D.A.V. Noida</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- Contact Section -->
+<section id="contact" class="bg-[#0f172a] text-white px-10 py-20">
+  <div class="text-center mb-8">
+    <p class="uppercase text-gray-400">Get in Touch</p>
+    <h2 class="text-5xl font-extrabold">Contact.</h2>
+  </div>
+  <div class="max-w-lg mx-auto bg-[#1e1b4b] p-8 rounded-2xl shadow-lg">
+    <form action="https://formspree.io/f/xdkgakgk" method="POST">
+      <div class="mb-4">
+        <label class="block text-sm text-gray-300 mb-1">Your Name</label>
+        <input 
+          type="text" 
+          name="name" 
+          placeholder="What's your good name?" 
+          class="w-full p-3 bg-[#0f172a] text-white rounded-lg border border-gray-600 focus:outline-none" 
+          required
+        />
+      </div>
+      <div class="mb-4">
+        <label class="block text-sm text-gray-300 mb-1">Your Email</label>
+        <input 
+          type="email" 
+          name="email" 
+          placeholder="What's your email address?" 
+          class="w-full p-3 bg-[#0f172a] text-white rounded-lg border border-gray-600 focus:outline-none" 
+          required
+        />
+      </div>
+      <div class="mb-6">
+        <label class="block text-sm text-gray-300 mb-1">Your Message</label>
+        <textarea 
+          name="message" 
+          placeholder="What you want to say" 
+          rows="5" 
+          class="w-full p-3 bg-[#0f172a] text-white rounded-lg border border-gray-600 focus:outline-none"
+          required
+        ></textarea>
+      </div>
+      <button 
+        type="submit" 
+        class="w-full py-3 bg-purple-600 hover:bg-purple-700 rounded-lg font-semibold transition-all"
+      >
+        Send
+      </button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-[#0f172a] text-gray-400 text-center py-4 border-t border-gray-700">
+  <p class="text-sm leading-tight">
+    © 2025 Created by <span class="text-white font-semibold">Hariom Tiwari</span> |
+    Designed by <span class="text-white font-semibold">Aman Soni</span>
+  </p>
+</footer>
+
 
 </body>
-
-</html> -->
+</html>
