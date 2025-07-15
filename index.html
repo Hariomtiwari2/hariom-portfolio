@@ -405,34 +405,9 @@
 <footer class="bg-[#0f172a] text-gray-400 text-center py-4 border-t border-gray-700">
   <p class="text-sm leading-tight">
     © 2025 Created by <span class="text-white font-semibold">Hariom Tiwari</span> |
-    Designed by <span class="text-white font-semibold">
-      <a href="https://www.instagram.com/uiuxwiz?igsh=MXZwMXB6eWI4dGNvMw==" target="_blank">Aman Soni</a>
-    </span>
-  </p>
-
-  <!-- Visitor Counter -->
-  <p id="visitorCount" class="text-sm mt-2">
-    👁️ Total Visitors: <span id="count">Loading...</span>
+    Designed by <span class="text-white font-semibold"><a href="https://www.instagram.com/uiuxwiz?igsh=MXZwMXB6eWI4dGNvMw==" target="_blank">Aman soni</a></span>
   </p>
 </footer>
-
-<!-- Visitor Counter Script -->
-<script>
-  // Replace with your custom namespace and key (must match the init URL if already set)
-  const namespace = 'hariom-portfolio';
-  const key = 'visits';
-
-  fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`)
-    .then(response => response.json())
-    .then(data => {
-      document.getElementById('count').innerText = data.value;
-    })
-    .catch(error => {
-      console.error('Visitor count error:', error);
-      document.getElementById('count').innerText = 'N/A';
-    });
-</script>
-
 
 
 </body>
